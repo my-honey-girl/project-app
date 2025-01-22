@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="intro.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: calibri;
+        } 
+        form {
+            width: 400px;
+            height: auto;
+            box-shadow: 0 0 20px rgba(0,0,0, 0.25);
+            margin: 100px auto;
+            border-radius: 20px;
+            padding: 20px 30px;
+            position: relative;
+        }
+        form h1 {
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 5px;
+        }
+        input {
+            display: block;
+            width: calc(100% - 20px);
+            padding: 5px 10px;
+            font-size: 20px;
+            margin: 10px 0;
+            margin-bottom: 5px;
+            outline: none;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type='submit'] {
+            padding: 10px 0;
+            font-size: 20px;
+            width:100%;
+            margin: 40px 0;
+            margin-bottom: 10px;
+            background-color: darkblue;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        input[type='submit']:hover {
+            background-color: blue;
+        }
+        .pass-div {
+            position: relative;
+        }
+        .showBox {
+            width: fit-content;
+            height: auto;
+            padding: 4px 8px;
+            /* background-color: rgb(179, 0, 89); */
+            color: white;
+            border-radius:5px;
+            font-weight: bold;
+            font-size: 12px;
+            position: absolute;
+            bottom:7px;
+            right:8px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .show {
+            background-color: rgb(0, 0, 176);
+        }
+        .show:hover {
+            background-color: blue;
+        }
+        .hide {
+            background-color: rgb(179, 0, 89);
+        }
+        .hide:hover {
+            background-color: rgb(255, 0, 128);
+        }
+        .error {
+            background-color: rgba(254, 0, 0, 0.16);
+            color: brown;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Go Back to the Home Page</a>
+    <form action="index.html" onsubmit="return validateFn()">
+        <h1>Register</h1>
+        <label for="fn">First Name:</label>
+        <input type="text" id="fn">
+        <div class="error">Pls Enter your First Name</div>
+
+        <label for="ln">Last Name:</label>
+        <input type="text" id="ln">
+        <div class="error">Pls Enter your Last Name</div>
+
+        <label for="pass">Password</label>
+        <div class="pass-div">
+            <input type="password" id="pass">
+            <div class="showBox show">SHow</div>
+
+        </div>
+        <div class="error">Pls Enter your Password</div>
+
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+
+    <script src="form validation.js"></script>
+</body>
+</html>
