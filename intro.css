@@ -1,0 +1,28 @@
+* {
+    font-family: calibri;
+}
+h1 {
+    color: blue;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: calibri;
+    color: brown;
+}
+a {
+    font-size: 30px;
+    padding: 10px 30px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+    width: fit-content;
+    border: none;
+    text-decoration: none;
+    transition: .5s;
+}
+a:hover {
+    background-color: rgb(255, 0, 128);
+}
